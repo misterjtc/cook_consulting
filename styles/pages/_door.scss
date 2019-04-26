@@ -1,0 +1,35 @@
+.door {
+    height: 100vh;
+    background: url(../../assets/jonatan-pie-194115-unsplash.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .wrapper-door {
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        padding-top: 200px;
+        p {
+            font-size: 2rem;
+            color: white;
+            line-height: 25px;
+        }
+    }
+    .secret {
+        position: absolute;
+        color: black;
+        left: 20px;
+        bottom: 20px;
+        height: 2px;
+        width: 2px;
+        a {
+            text-decoration: none;
+        }
+    }
+}
