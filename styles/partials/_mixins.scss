@@ -44,11 +44,11 @@
     .search {
         display: flex;
         align-items: center;
-        padding: 25px 45px;;
+        justify-content: center;
         border-left: 0.5px solid rgba(211, 211, 211, 0.5);
-        height: inherit;
         a {
             color: $textColor;
+            padding: 25px 45px;
         }
     }
 }

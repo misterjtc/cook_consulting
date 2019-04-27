@@ -278,11 +278,13 @@ header {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      padding: 25px 45px;
-      border-left: 0.5px solid rgba(211, 211, 211, 0.5);
-      height: inherit; }
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      border-left: 0.5px solid rgba(211, 211, 211, 0.5); }
       header .headerTop .search a {
-        color: white; }
+        color: white;
+        padding: 25px 45px; }
   header .hero .hero1 {
     background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/Splash1.PNG) no-repeat center;
     background: -o-linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/Splash1.PNG) no-repeat center;
@@ -519,11 +521,13 @@ header {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 25px 45px;
-    border-left: 0.5px solid rgba(211, 211, 211, 0.5);
-    height: inherit; }
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-left: 0.5px solid rgba(211, 211, 211, 0.5); }
     .headerAfter .search a {
-      color: black; }
+      color: black;
+      padding: 25px 45px; }
 
 @media (min-width: 0) and (max-width: 576px) {
   .headerAfter {
@@ -853,13 +857,13 @@ header {
     align-items: center;
     width: 100%; }
     #about .about .aboutImg {
-      height: 565px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: stretch;
       -ms-flex-align: stretch;
-      align-items: stretch; }
+      align-items: stretch;
+      width: 50%; }
       #about .about .aboutImg img {
         display: block;
         width: 100%;
@@ -877,11 +881,11 @@ header {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      padding-right: 2%;
       margin-top: 35px;
-      padding-bottom: 35px; }
+      width: 50%; }
       #about .about .aboutUs h2 {
-        margin-top: 0; }
+        margin-top: 0;
+        text-transform: uppercase; }
       #about .about .aboutUs .aboutItem {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -899,16 +903,22 @@ header {
           -webkit-box-pack: center;
           -ms-flex-pack: center;
           justify-content: center;
-          height: 48px;
-          width: 60px; }
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          height: 40px;
+          width: 52px; }
           #about .about .aboutUs .aboutItem .aboutIcon i {
             display: block;
-            font-size: 4.8rem;
+            font-size: 4rem;
             color: #e64b37; }
         #about .about .aboutUs .aboutItem .aboutText {
           margin-left: 25px; }
+          #about .about .aboutUs .aboutItem .aboutText h3 {
+            margin: 10px 0; }
           #about .about .aboutUs .aboutItem .aboutText p {
-            width: 75%; }
+            margin: 10px 0;
+            width: 80%; }
 
 @media (min-width: 0) and (max-width: 576px) {
   #about .about {
@@ -917,7 +927,8 @@ header {
     -ms-flex-direction: column;
     flex-direction: column; }
     #about .about .aboutImg {
-      height: 365px; }
+      height: 365px;
+      width: 80%; }
     #about .about .aboutUs {
       border-top: none; } }
 
@@ -928,7 +939,8 @@ header {
     -ms-flex-direction: column;
     flex-direction: column; }
     #about .about .aboutImg {
-      height: 365px; }
+      height: 365px;
+      width: 80%; }
     #about .about .aboutUs {
       border-top: none; } }
 
@@ -945,7 +957,8 @@ header {
     -ms-flex-align: center;
     align-items: center; }
     #about .about .aboutImg {
-      height: 500px; }
+      height: auto;
+      width: 70%; }
     #about .about .aboutUs {
       border-top: none; } }
 
@@ -962,7 +975,8 @@ header {
     -ms-flex-align: center;
     align-items: center; }
     #about .about .aboutImg {
-      height: 500px; }
+      height: auto;
+      width: 60%; }
     #about .about .aboutUs {
       border-top: none; } }
 
@@ -978,7 +992,7 @@ header {
       -ms-flex-pack: justify;
       justify-content: space-between; }
       #about .about .aboutImg {
-        height: 565px; }
+        width: 50%; }
       #about .about .aboutUs {
         border-top: 1px solid #d3d3d3;
         height: 565px;
@@ -1000,6 +1014,8 @@ header {
     -ms-flex-line-pack: center;
     align-content: center;
     text-align: center; }
+    #projects .projects h2 {
+      text-transform: uppercase; }
   #projects .projectCats nav {
     margin: 0 auto; }
     #projects .projectCats nav ul {
