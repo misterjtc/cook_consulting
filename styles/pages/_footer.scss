@@ -44,8 +44,14 @@ footer {
                             display: inline-block;
                             text-decoration: none;
                             color: $greyText;
-                            padding: 10px 15px;
+                            padding: 5px 0px;
+                            margin: 7px 0px;
                             padding-left: 0;
+                            border-bottom: 1px solid transparent;
+                            transition: border-bottom 300ms linear;
+                            &:hover {
+                                border-bottom: 1px solid $greyText;
+                            }
                         }
                     }
                 }

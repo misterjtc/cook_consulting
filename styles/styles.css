@@ -372,9 +372,9 @@ header {
 .mainLink {
   text-decoration: none;
   color: white;
-  padding: 15px;
+  padding: 12px 15px;
   background: #e64b37;
-  border-radius: 10px;
+  border-radius: 17px;
   font-weight: 700;
   margin-top: 40px;
   -webkit-transition: all 300ms ease-in-out;
@@ -1027,9 +1027,9 @@ header {
           transition: all 0.3s ease-in;
           text-decoration: none;
           color: black;
-          padding: 15px;
+          padding: 12px 15px;
           background: transparent;
-          border-radius: 10px;
+          border-radius: 17px;
           font-weight: 700;
           margin-top: 40px;
           -webkit-transition: all 300ms ease-in-out;
@@ -1041,9 +1041,9 @@ header {
         #projects .projectCats nav ul li .activeCategory {
           text-decoration: none;
           color: white;
-          padding: 15px;
+          padding: 12px 15px;
           background: #e64b37;
-          border-radius: 10px;
+          border-radius: 17px;
           font-weight: 700;
           margin-top: 40px;
           -webkit-transition: all 300ms ease-in-out;
@@ -1247,8 +1247,15 @@ footer .wrapper {
             display: inline-block;
             text-decoration: none;
             color: #7d7d7d;
-            padding: 10px 15px;
-            padding-left: 0; }
+            padding: 5px 0px;
+            margin: 7px 0px;
+            padding-left: 0;
+            border-bottom: 1px solid transparent;
+            -webkit-transition: border-bottom 300ms linear;
+            -o-transition: border-bottom 300ms linear;
+            transition: border-bottom 300ms linear; }
+            footer .wrapper .footer .mainLinks .mainLinkItem ul a:hover {
+              border-bottom: 1px solid #7d7d7d; }
   footer .wrapper .theEnd {
     display: -webkit-box;
     display: -ms-flexbox;

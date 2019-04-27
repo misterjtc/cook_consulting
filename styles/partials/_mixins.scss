@@ -56,9 +56,9 @@
 @mixin mainLinks($textColor, $backgroundColor, $hoverColor, $hoverBackground) {
     text-decoration: none;
     color: $textColor;
-    padding: 15px;
+    padding: 12px 15px;
     background: $backgroundColor;
-    border-radius: 10px;
+    border-radius: 17px;
     font-weight: 700;
     margin-top: 40px;
     transition: all 300ms ease-in-out;
