@@ -64,12 +64,20 @@
     #about {
         .about {
             flex-direction: column;
+            margin-bottom: 35px;
             .aboutImg {
-                height: 365px;
+                height: 225px;
                 width: 80%;
             }
             .aboutUs {
                 border-top: none;
+                width: 80%;
+                padding: 0;
+                align-items: center;
+                padding-bottom: 35px;
+                .aboutItem {
+                    margin-left: 45px;
+                }
             }
         }
     }
@@ -77,13 +85,21 @@
 @media (min-width: $sm) {
     #about {
         .about {
+            margin-bottom: 35px;
             flex-direction: column;
             .aboutImg {
-                height: 365px;
+                height: 305px;
                 width: 80%;
             }
             .aboutUs {
                 border-top: none;
+                width: 80%;
+                padding: 0;
+                align-items: center;
+                padding-bottom: 35px;
+                .aboutItem {
+                    margin-left: 75px;
+                }
             }
         }
     }
@@ -95,44 +111,54 @@
             justify-content: center;
             align-items: center;
             .aboutImg {
-                height: auto;
-                width: 70%;
+                height: 325px;
+                width: 80%;
             }
             .aboutUs {
                 border-top: none;
+                width: 80%;
+                .aboutItem {
+                    margin-left: 100px;
+                }
             }
         }
     }
 }
-@media (min-width: $lg) {
+@media (min-width: $lg) and (max-width: $xl) {
     #about {
         .about {
             flex-direction: column;
             justify-content: center;
             align-items: center;
             .aboutImg {
-                height: auto;
-                width: 60%;
+                height: 410px;
+                width: 80%;
             }
             .aboutUs {
                 border-top: none;
+                width: 80%;
+                .aboutItem {
+                    margin-left: 120px;
+                }
             }
         }
     }
 }
 @media (min-width: $xl) {
     #about {
-        height: 100vh;
         .about {
             flex-direction: row;
             justify-content: space-between;
             .aboutImg {
                 width: 50%;
+                height: auto;
             }
             .aboutUs {
                 border-top: 1px solid $borderColor;
+                align-items: flex-start;
                 height: 565px;
                 margin: 0;
+                width: 50%;
             }
         }
     }

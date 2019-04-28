@@ -12,6 +12,7 @@
         align-items: center;
         .logo {
             border: none;
+            width: 225px;
         }
         nav {
             justify-content: center;
@@ -33,6 +34,7 @@
         align-items: center;
         .logo {
             border: none;
+            width: 225px;
         }
         nav {
             justify-content: center;
@@ -43,7 +45,11 @@
     }
 }
 @media (min-width: $md) {
-
+    .headerAfter {
+        .logo {
+            width: 250px;
+        }
+    }
 }
 @media (min-width: $lg) {
     .headerAfter {

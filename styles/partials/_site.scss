@@ -1,25 +1,55 @@
 // These are the base site CSS styles
 html {
     font-family: 'Raleway', sans-serif;
-    font-size: 62.5%;
+    font-size: $baseFont;
 }
-
 h1 {
-    font-size: 5rem;
+    font-size: $h1Desk;
 }
-
 h2 {
-    font-size: 3.5rem;
+    font-size: $h2Desk;
 }
-
 h3 {
-    font-size: 2.2rem;
+    font-size: $h3Desk;
 }
-
 p {
-    font-size: 1.8rem;
+    font-size: $pDesk;
 }
-
 a {
-    font-size: 1.5rem;
+    font-size: $aDesk;
+}
+// Sidewide Media queries
+@media (min-width: 0) and (max-width: $md) {
+    h1 {
+        font-size: $h1Mobile;
+    }
+    h2 {
+        font-size: $h2Mobile;
+    }
+    h3 {
+        font-size: $h3Mobile;
+    }
+    p {
+        font-size: $pMobile;
+    }
+    a {
+        font-size: $aMobile;
+    }
+}
+@media (min-wdith: $md) {
+    h1 {
+        font-size: $h1Desk;
+    }
+    h2 {
+        font-size: $h2Desk;
+    }
+    h3 {
+        font-size: $h3Desk;
+    }
+    p {
+        font-size: $pDesk;
+    }
+    a {
+        font-size: $aDesk;
+    }
 }
