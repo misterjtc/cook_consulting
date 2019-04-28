@@ -1036,7 +1036,8 @@ header {
     flex-direction: row;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-bottom: 65px; }
     #about .about .aboutImg {
       width: 50%;
       height: auto; }
