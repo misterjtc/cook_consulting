@@ -52,7 +52,7 @@
                     }
                     p {
                         margin: 10px 0;
-                        width: 80%;
+                        width: 90%;
                     }
                 }
             }
@@ -155,10 +155,15 @@
             }
             .aboutUs {
                 border-top: 1px solid $borderColor;
+                padding-left: 60px;
                 align-items: flex-start;
                 height: 565px;
                 margin: 0;
                 width: 50%;
+                padding-bottom: 0;
+                .aboutItem {
+                    margin-left: 0;
+                }
             }
         }
     }

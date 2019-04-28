@@ -7,14 +7,13 @@
 @import "./partials/mixins";
 @import "./partials/site";
 // Main Site Sections
-@import "./pages/overTheTop";
-@import "./pages/header";
-@import "./pages/headerAfter";
-@import "./pages/workSection";
-@import "./pages/aboutSection";
-@import "./pages/projectsSection";
-@import "./pages/contactSection";
-@import "./pages/getMoney";
-@import "./pages/footer";
+@import "./sections/overTheTop";
+@import "./sections/header";
+@import "./sections/headerAfter";
+@import "./sections/work";
+@import "./sections/about";
+@import "./sections/projects";
+@import "./sections/getMoney";
+@import "./sections/footer";
 // Secrets
 @import "./pages/door";
