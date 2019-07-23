@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<!-- 
+Designed and developed by:
+     ____.                .___               _________                __    
+    |    | ___________  __| _/____    ____   \_   ___ \  ____   ____ |  | __
+    |    |/  _ \_  __ \/ __ |\__  \  /    \  /    \  \/ /  _ \ /  _ \|  |/ /
+/\__|    (  <_> )  | \/ /_/ | / __ \|   |  \ \     \___(  <_> |  <_> )    < 
+\________|\____/|__|  \____ |(____  /___|  /  \______  /\____/ \____/|__|_ \
+                           \/     \/     \/          \/                   \/
+ -->
 <html lang="en">
 <head>
    <meta charset="UTF-8">
@@ -6,7 +15,6 @@
    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico"/>
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-Bx4pytHkyTDy3aJKjGkGoHPt3tvv6zlwwjc3iqN7ktaiEMLDPqLSZYts2OjKcBx1" crossorigin="anonymous">
    <link rel="stylesheet" href="./styles/flickity.css"/>
    <link rel="stylesheet" href="./styles/styles.css"/>
 </head>
@@ -187,7 +195,7 @@
                 </h2>
                 <div class="aboutItem">
                     <div class="aboutIcon">
-                        <i class="fal fa-handshake"></i>
+                        <i class="fal fa-handshake fa-fw"></i>
                     </div>
                     <div class="aboutText">
                         <h3>
@@ -200,20 +208,20 @@
                 </div>
                 <div class="aboutItem">
                     <div class="aboutIcon">
-                        <i class="fal fa-trophy-alt"></i>
+                        <i class="fal fa-trophy-alt fa-fw"></i>
                     </div>
                     <div class="aboutText">
                         <h3>
                             Leadership
                         </h3>
                         <p>
-                            We push the boundaries and challenge convention, stratically and technologically.
+                            We push the boundaries and challenge convention, stratigically and technologically.
                         </p>
                     </div>
                 </div>
                 <div class="aboutItem">
                     <div class="aboutIcon">
-                        <i class="fal fa-books"></i>
+                        <i class="fal fa-books fa-fw"></i>
                     </div>
                     <div class="aboutText">
                         <h3>
@@ -224,7 +232,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="aboutItem">
+                <!-- <div class="aboutItem">
                     <div class="aboutIcon">
                         <i class="fal fa-fighter-jet"></i>
                     </div>
@@ -236,10 +244,10 @@
                             We are responsive in our technical and commercial approach to suit the needs of our customers.
                         </p>
                     </div>
-                </div>
+                </div> -->
                 <div class="aboutItem">
                     <div class="aboutIcon">
-                        <i class="fal fa-user-shield"></i>
+                        <i class="fal fa-user-shield fa-fw"></i>
                     </div>
                     <div class="aboutText">
                         <h3>
@@ -492,94 +500,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js" ></script>
-    <!-- Document Ready -->
-    <script>
-        $(function(){
-            // Flickity hero slider config. for header
-            $('.hero').flickity({
-                arrowShape: { 
-                x0: 10,
-                x1: 60, y1: 50,
-                x2: 70, y2: 40,
-                x3: 30
-                },
-                pageDots: false,
-                contain: true
-            });
-            // Flickity hero slider config for certain portfolio items
-            $('.portHero').flickity({
-                pageDots: true,
-                contain: true,
-                autoPlay: 4000,
-                cellSelector: '.portCell',
-                prevNextButtons: false,
-            });
-            // Smoothscroll config.
-            $(".scrollDown a, .headText a, .smoothWork a, .scroll a").smoothScroll ({
-                offset: -55,
-                speed: 700,
-                easing: 'linear',
-            });
-            $(".smoothAbout a").smoothScroll ({
-                offset: -200,
-                speed: 700,
-                easing: 'linear',
-            });
-            $(".smoothProject a").smoothScroll ({
-                offset: -75,
-                speed: 700,
-                easing: 'linear',
-            });
-            // Hide/show specific site features depending on the users scroll position
-            // Make sure the secondary header is hidden when the page is loaded
-            $('.headerAfter').hide(function(){
-            });
-            $(document).scroll(function(){
-                // Show after the user scrolls 800px
-                var y = $(this).scrollTop();
-                if (y > 800) {
-                    // This is for the scroll to the top button
-                    $('.overTheTop').fadeIn();
-                    // This is for the secondary header
-                    $('.headerAfter').fadeIn();
-                // Otherwise hide featyres
-                } else {
-                    //  This is for the scroll to the top button
-                    $('.overTheTop').fadeOut();
-                    // This is for the secondary header
-                    $('.headerAfter').fadeOut();
-                }
-            });
-            // Toggling of button styling for filtering of content in the project section
-            $('.projSort').on("click", function(){
-                $('.projSort').removeClass('activeCategory');
-                $(this).addClass("activeCategory");
-            });
-            // Hide/show portfolio items based on content selector
-            $('.showAll').on("click", function(){
-                $('.portfolioItem').removeClass('activePortfolioItem');
-            });
-            $('.design').on("click", function(){
-                $('.portfolioItem').addClass('activePortfolioItem');
-                $('.designItem').removeClass('activePortfolioItem');
-            });
-            $('.printing').on("click", function(){
-                $('.portfolioItem').addClass('activePortfolioItem');
-                $('.printItem').removeClass('activePortfolioItem');
-            });
-            $('.rendering').on("click", function(){
-                $('.portfolioItem').addClass('activePortfolioItem');
-                $('.renderItem').removeClass('activePortfolioItem');
-            });
-            $('.fea').on("click", function(){
-                $('.portfolioItem').addClass('activePortfolioItem');
-                $('.feaItem').removeClass('activePortfolioItem');
-            });
-            $('.drone').on("click", function(){
-                $('.portfolioItem').addClass('activePortfolioItem');
-                $('.droneItem').removeClass('activePortfolioItem');
-            });
-        });
-    </script>
+    <script src="https://kit.fontawesome.com/c7fe253caa.js"></script>
+    <script src="/scripts/main.js"></script>
 </body>
 </html>
